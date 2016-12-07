@@ -1,0 +1,19 @@
+{
+  "name": "stockjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/**/*spec*",
+    "test:coverage": "test istanbul cover _mocha ./test/**/*spec*"
+  },
+  "author": "RafKam",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.11.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.6"
+  }
+}
