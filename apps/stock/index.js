@@ -3,7 +3,11 @@ module.exports = class Stock {
         this.stock = [];
     }
     add (partName) {
-        this.stock.push(partName);
+        if(Array.isArray(partName)) {
+            this.stock.push(...partName)
+        } else {
+            this.stock.push(partName)
+        }
     };
     take () {
         return this.stock.shift();
