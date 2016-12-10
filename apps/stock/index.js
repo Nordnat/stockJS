@@ -1,16 +1,11 @@
-let stock = [];
-
-/**
- * @param partName (string)
- */
-function addToStock(partName) {
-    "use strict";
-    stock.push(partName);
+module.exports = class Stock {
+    constructor () {
+        this.stock = [];
+    }
+    add (partName) {
+        this.stock.push(partName);
+    };
+    take () {
+        return this.stock.shift();
+    };
 }
-
-function takeFromStock() {
-    "use strict";
-    return stock.shift();
-}
-
-module.exports = {stock, addToStock, takeFromStock};
