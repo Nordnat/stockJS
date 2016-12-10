@@ -29,4 +29,15 @@ describe('#Stock apps', function () {
         expect(stock.stock).to.have.lengthOf(1);
         expect(stock.stock[0]).to.equal('car dors');
     });
+    it('should add elements form pushed array', function () {
+        stock.stock = ['engine parts', 'car dors'];
+
+        let
+            element3 = ['brakes', 'wheel'];
+        stock.add(element3);
+
+
+        expect(stock.stock).to.have.lengthOf(4);
+        expect(stock.stock[3]).to.equal('wheel');
+    });
 });
