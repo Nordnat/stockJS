@@ -29,7 +29,7 @@ describe('#Stock apps', function () {
         expect(stock.stock).to.have.lengthOf(1);
         expect(stock.stock[0]).to.equal('car dors');
     });
-    it('should add elements form pushed array', function () {
+    it('should add elements from pushed array', function () {
         stock.stock = ['engine parts', 'car dors'];
 
         let
