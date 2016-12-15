@@ -2,8 +2,8 @@ const
     chai = require('chai'),
     expect = chai.expect,
     Stock = require('../apps/stock/stock');
-let stock;
 
+let stock;
 
 describe('#Stock apps', function () {
     beforeEach(function () {
