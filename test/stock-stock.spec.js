@@ -1,9 +1,9 @@
 const
     chai = require('chai'),
     expect = chai.expect,
-    Stock = require('../apps/stock/index');
-let stock;
+    Stock = require('../apps/stock/stock');
 
+let stock;
 
 describe('#Stock apps', function () {
     beforeEach(function () {
@@ -35,7 +35,6 @@ describe('#Stock apps', function () {
         let
             element3 = ['brakes', 'wheel'];
         stock.add(element3);
-
 
         expect(stock.stock).to.have.lengthOf(4);
         expect(stock.stock[3]).to.equal('wheel');
