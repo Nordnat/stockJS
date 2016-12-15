@@ -22,7 +22,7 @@ describe('#Stock apps', function () {
         expect(stock.stock[0]).to.equal(element1);
         expect(stock.stock[1]).to.equal(element2);
     });
-    it('should return first elemnt from stock', function () {
+    it('should return first element from stock', function () {
         stock.stock = ['engine parts', 'car dors'];
 
         expect(stock.take()).to.equal('engine parts');
