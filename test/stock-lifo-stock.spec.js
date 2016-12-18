@@ -1,8 +1,8 @@
 const
     chai = require('chai'),
     expect = chai.expect,
-    Stock = require('../apps/stock/stock'),
-    LifoStock = require('../apps/stock/lifo-stock');
+    Stock = require('../apps/stock/models/stock'),
+    LifoStock = require('../apps/stock/models/lifo-stock');
 
 let stock;
 
