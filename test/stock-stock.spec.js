@@ -1,7 +1,7 @@
 const
     chai = require('chai'),
     expect = chai.expect,
-    Stock = require('../apps/stock/stock');
+    Stock = require('../apps/stock/models/stock');
 
 let stock;
 
