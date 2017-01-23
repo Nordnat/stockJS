@@ -10,10 +10,12 @@ describe('#Stock apps', function () {
         stock = new Stock();
     });
 
+
+
     it('should add new element to stock', function () {
         let
-            element1 = 'engine parts',
-            element2 = 'car dors';
+            element1 = [{'name': 'wheel', 'price': 199, 'producent': 'bridgestone'}],
+            element2 = [{'name': 'brakes', 'price': 89, 'producent': 'brakeCorp'}];
 
         stock.add(element1);
         stock.add(element2);
